@@ -87,7 +87,7 @@ function displayCharacter(allCharacters) {
   positionCharacters.innerHTML = "";
   allCharacters.forEach((character) => {
     positionCharacters.innerHTML += `<div class="m-3 card col-md-5" style="width: 18rem;">
-  <img height="500px" class="card-img-top" src="./image/${character.avatar}" alt="Card image cap">
+  <img height="500px" class="card-img-top" src="./Image/${character.avatar}" alt="Card image cap">
   <div class="card-body">
     <h5 class="text-center card-title">${character.name}</h5>
     <p class="text-center card-text font-weight-bold text-info">${character.constructor.name}</p>
