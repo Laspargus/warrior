@@ -56,8 +56,8 @@ const aAttackB = () => {
     </div>`;
     displayCharacter(allCharacters);
   } else {
-    document.getElementById("battle-message").innerHTML = `
-    ${allCharacters[0].name} has not enough attack Capacity`;
+    document.getElementById("battle-message").innerHTML = `<div>
+    ${allCharacters[0].name} has not enough attack Capacity </div>`;
   }
 };
 
@@ -73,8 +73,8 @@ const bAttackA = () => {
     </div>`;
     displayCharacter(allCharacters);
   } else {
-    document.getElementById("battle-message").innerHTML = `
-    ${allCharacters[2].name} has not enough attack Capacity`;
+    document.getElementById("battle-message").innerHTML = `  <div>
+    ${allCharacters[1].name} has not enough attack Capacity</div>`;
   }
 };
 

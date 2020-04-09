@@ -13,17 +13,16 @@ class Human extends Character {
 
   dealDamage = (victim) => {
     victim.takeDamage(this.attackCost);
-    console.log("victimeDamage", this.attackCost);
-    this.attackCapacity -= 10;
+    this.attackCapacity -= this.attackCost;
     this.message = `I just attacked ${victim.name}. It costed me 10 point of Attack. My attack power is now ${this.attackCapacity}`;
   };
 
   takeDamage = (damage) => {
-    console.log("damage", damage);
     this.healthyPoint -= damage;
     this.message = `I just lost ${this.attackCost} of HealthyPoint and has only  ${this.healthyPoint} left.`;
     if (this.healthyPoint <= 0) {
       this.state = "Dead";
+      this.message = "Oups,  I am afraid  I am dead";
       console.log("I just died");
     }
   };
